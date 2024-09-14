@@ -146,7 +146,31 @@ namespace learningcsharp
             {
                 Console.WriteLine($"Hello {names[y].ToLower()}!");
             }
+            Console.WriteLine("");
 
+            //Sorting, searching and indexing
+            Console.WriteLine("Before sorting...");
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }
+
+            Console.WriteLine("After Sorting...");
+            names.Sort();
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("");
+            var index = names.IndexOf("Moses");
+            if (index == -1)
+            {
+                Console.WriteLine("The name Moses is not in the list");
+            }
+            else
+            {
+                Console.WriteLine($"The name Moses is at index {index}");
+            }
             Console.ReadKey();
         }
     }
