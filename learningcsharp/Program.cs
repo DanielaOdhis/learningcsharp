@@ -16,9 +16,9 @@ namespace learningcsharp
             Console.WriteLine("");
 
             //using strings
-            string name = "Daniela";
-            Console.WriteLine("My name is " + name);
-            Console.WriteLine($"The name {name} has {name.Length} letters");
+            string myname = "Daniela";
+            Console.WriteLine("My name is " + myname);
+            Console.WriteLine($"The name {myname} has {myname.Length} letters");
 
             string age = "21";
             Console.WriteLine($"I am  {age} years old");
@@ -129,6 +129,24 @@ namespace learningcsharp
                 }
             }
             Console.WriteLine($"The sum is {sum}");
+            Console.WriteLine("");
+
+            //Arrays  and Lists
+            var names = new List<string> {"Daniela", "Moses", "Andrew" };
+            names.Add("Bill");
+            names.Add("Cassandra");
+            names.Remove("Moses");
+
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            for (int y = 0; y < names.Count; y++)
+            {
+                Console.WriteLine($"Hello {names[y].ToLower()}!");
+            }
+
             Console.ReadKey();
         }
     }
