@@ -117,6 +117,18 @@ namespace learningcsharp
             {
                 Console.WriteLine($"The counter is {counter2}");
             }
+            Console.WriteLine("");
+
+            //Combining branches and loops
+            int sum = 0;
+            for (int z=1; z <= 20;z++)
+            {
+                if (z % 3 == 0)
+                {
+                    sum = sum + z;
+                }
+            }
+            Console.WriteLine($"The sum is {sum}");
             Console.ReadKey();
         }
     }
