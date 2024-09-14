@@ -112,6 +112,11 @@ namespace learningcsharp
                 Console.WriteLine($"The counter is {counter1}");
                 counter1--;
             } while (counter1 > 0);
+
+            for (int counter2 = 0; counter2 < 10; counter2++)
+            {
+                Console.WriteLine($"The counter is {counter2}");
+            }
             Console.ReadKey();
         }
     }
