@@ -96,7 +96,22 @@ namespace learningcsharp
                 Console.WriteLine("The answer is not greater than 10");
                 Console.WriteLine("Or the first number is not equal to the second");
             }
+            Console.WriteLine("");
 
+            //Loops
+            int counter = 0;
+            while (counter < 10)
+            {
+                Console.WriteLine($"The counter is {counter}");
+                counter++;
+            }
+
+            int counter1 = 10;
+            do
+            {
+                Console.WriteLine($"The counter is {counter1}");
+                counter1--;
+            } while (counter1 > 0);
             Console.ReadKey();
         }
     }
